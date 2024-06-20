@@ -92,5 +92,5 @@ ppt_buffer.seek(0)
 st.download_button("Download PowerPoint", ppt_buffer, file_name="game_portfolio_analysis.pptx", mime="application/vnd.openxmlformats-officedocument.presentationml.presentation")
 st.title("Game Cultural Fit Analysis")
 st.image("picgt.PNG")
-
-st.info("v1- dw")
+st.markdown("[Full dashboard Link](https://db6-mdemo.streamlit.app/)")
+st.info("v1.1- dw")
