@@ -17,6 +17,17 @@ ppt = Presentation(ppt_path)
 file_path = 'games_data.csv'
 games_data = pd.read_csv(file_path)
 
+# Custom CSS to hide the Streamlit menu and footer
+hide_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
+
 # Set up the sidebar for category selection
 st.sidebar.title("Game Categories")
 category = st.sidebar.radio("Select a category", games_data['Category'].unique())
